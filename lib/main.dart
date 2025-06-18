@@ -652,7 +652,7 @@ class _CryptoPageState extends State<CryptoPage> {
 
   Future<void> fetchCryptoRates() async {
     final response = await http.get(Uri.parse(
-        'https://raw.githubusercontent.com/Alkhatem770/isco00007/refs/heads/main/data/crypto_sdg.json'));
+        'https://raw.githubusercontent.com/Khatym/khatom00007/main/data/crypto_sdg.json'));
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       setState(() {
