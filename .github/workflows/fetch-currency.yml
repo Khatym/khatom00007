@@ -32,8 +32,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add currency.json
           git commit -m "🔄 Update currency rates" || echo "No changes to commit"
-<<<<<<< HEAD
           git push https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
-=======
-          git push https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
->>>>>>> c94f6aff6c9e1309b7924ec0775904d1abde35cc
