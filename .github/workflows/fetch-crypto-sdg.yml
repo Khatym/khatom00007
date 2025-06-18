@@ -1,6 +1,5 @@
 # تعديل بسيط لإجبار GitHub على إعادة تحميل الـ workflow
 name: Fetch Crypto and SDG Data
-...
 
 on:
   schedule:
