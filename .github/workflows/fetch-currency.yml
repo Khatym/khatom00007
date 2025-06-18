@@ -24,7 +24,7 @@ jobs:
       - name: Run currency fetch script
         run: node fetch-currency.js
 
-            - name: Commit and push currency.json
+      - name: Commit and push currency.json
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
