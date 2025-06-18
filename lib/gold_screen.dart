@@ -15,8 +15,10 @@ class _GoldScreenState extends State<GoldScreen> {
   final String goldApiUrl =
       'https://raw.githubusercontent.com/Khatym/khatom00007/refs/heads/main/gold.json';
 
+  // API روابط العملات
   final String currencyApiUrl =
-      'https://script.google.com/macros/s/AKfycbzJshgLxR0SOhZwNGWX9Fal8OLCsB_VvbP7sr5NS-zjAij31qK4uvXqNCOnmbyyNuAOZQ/exec';
+      'https://raw.githubusercontent.com/Khatym/khatom00007/refs/heads/main/currency.json';
+  // غيّر هذا إلى رابط Google Sheets الخاص بك:
   final String sdgApiUrl =
       'https://script.google.com/macros/s/AKfycbyeI-mfyoGqNyX8Gsxkh-dh3A-fq6_2GwMfDP54bkx4LJaxojPUIH0TSrLZNwctF9fN/exec';
 
@@ -204,3 +206,4 @@ class _GoldScreenState extends State<GoldScreen> {
     );
   }
 }
+
