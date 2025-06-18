@@ -320,7 +320,7 @@ class _HomePageState extends State<HomePage> {
   Future<double?> fetchSDGRateFromGoogleSheet() async {
     try {
       final response = await http.get(Uri.parse(
-        'https://docs.google.com/spreadsheets/d/17gLQV0dE_rDv_WU83-FZuZCttlDUkj9nkz6LaXhduJ0/export?format=csv',
+        'https://raw.githubusercontent.com/Khatym/khatom00007/main/data/crypto_sdg.json',
       ));
 
       if (response.statusCode == 200) {
@@ -1092,7 +1092,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Future<double?> fetchSDGRateFromGoogleSheet() async {
     try {
       final response = await http.get(Uri.parse(
-          'https://docs.google.com/spreadsheets/d/17gLQV0dE_rDv_WU83-FZuZCttlDUkj9nkz6LaXhduJ0/export?format=csv'));
+          'https://raw.githubusercontent.com/Khatym/khatom00007/main/data/crypto_sdg.json'));
 
       if (response.statusCode == 200) {
         final csvTable = const CsvToListConverter().convert(response.body);
