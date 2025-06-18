@@ -351,9 +351,9 @@ class _HomePageState extends State<HomePage> {
 
     try {
       final todayResponse = await http.get(Uri.parse(
-          'https://raw.githubusercontent.com/Alkhatem770/isco00007/refs/heads/main/currency.json'));
+          'https://raw.githubusercontent.com/Khatym/khatom00007/refs/heads/main/currency.json'));
       final yesterdayResponse = await http.get(Uri.parse(
-          'https://raw.githubusercontent.com/Alkhatem770/isco00007/refs/heads/main/currency.json?date=${getYesterdayDate()}'));
+          'https://raw.githubusercontent.com/Khatym/khatom00007/refs/heads/main/currency.json?date=${getYesterdayDate()}'));
       if (todayResponse.statusCode == 200 &&
           yesterdayResponse.statusCode == 200) {
         final todayData = json.decode(todayResponse.body);
@@ -652,7 +652,7 @@ class _CryptoPageState extends State<CryptoPage> {
 
   Future<void> fetchCryptoRates() async {
     final response = await http.get(Uri.parse(
-        'https://raw.githubusercontent.com/Alkhatem770/isco00007/refs/heads/main/data/crypto_sdg.json'));
+        'https://raw.githubusercontent.com/Khatym/khatom00007/main/data/crypto_sdg.json'));
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       setState(() {
@@ -1143,7 +1143,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Future<void> fetchAndCacheRates(SharedPreferences prefs) async {
     try {
       final response = await http.get(Uri.parse(
-          'https://raw.githubusercontent.com/Alkhatem770/isco00007/refs/heads/main/currency.json'));
+          'https://raw.githubusercontent.com/Khatym/khatom00007/refs/heads/main/currency.json'));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
