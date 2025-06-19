@@ -2,7 +2,7 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 const API_URL = "https://www.goldapi.io/api/XAU/USD";
-const API_KEY = "goldapi-40cz8yf28en-io";
+const API_KEY = "goldapi-5ra2esmc2ze0t1-io";
 
 async function fetchGoldPrice() {
   try {
