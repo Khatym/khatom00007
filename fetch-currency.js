@@ -1,7 +1,7 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-const API_URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_SQkLgw6eQl16UyuJBFw1satjHanuMEGUPaU0fLJ0";
+const API_URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_SQkLgw6eQl16UyuJBFw1satjHanuMEGUPaU0fLJ0&base_currency=USD&currencies=EGP,EUR,AED,SAR";
 
 async function fetchCurrencyRates() {
   try {
