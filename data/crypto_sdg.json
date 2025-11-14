@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-11-14T04:31:18.689Z",
+  "timestamp": "2025-11-14T04:46:09.983Z",
   "crypto": {
     "bitcoin": {
-      "usd": 98899
+      "usd": 97490
     },
     "ethereum": {
-      "usd": 3212.24
+      "usd": 3145.6
     },
     "solana": {
-      "usd": 143.48
+      "usd": 140.67
     }
   },
   "sdg": 3151
